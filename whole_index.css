@@ -1,0 +1,576 @@
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+html {
+    font-size: 20px;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.container {
+    position: relative;
+    top: 3vh;
+    width: 100%;
+    /* height: 800px; */
+}
+
+.row2_wrap {
+    width: 100%;
+    height: 90vh;
+    /* height: 700px; */
+    background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2022/Summer1_ph2_main_bg_02.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+
+.row2_wrap>div:first-child {
+    animation: fadein 1s;    
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+} /* slogan */
+
+.row2_wrap img {
+    position: absolute;
+}
+
+.row2_wrap div:first-child img{
+    top: 10vh;
+    left: 7vw;
+    width: 45vw;
+    height: 7vh;
+} /* slogan.img */
+
+.row2_wrap>div:nth-child(2) {
+    display: block;
+} /* menu_set */
+
+.row2_wrap>div:nth-child(2)>div:nth-child(1) {
+    animation: fadein 9s;  
+    -moz-animation: fadein 9s; /* Firefox */
+    -webkit-animation: fadein 9s; /* Safari and Chrome */
+    -o-animation: fadein 9s; /* Opera */
+} /*menu_set > st_menu */
+
+
+.row2_wrap>div:nth-child(2)>div:nth-child(1) img {
+    left: 13vw;
+    top: 35vh;
+    width: 40vw;
+    height: 47vh;
+} /*menu_set > st_menu.img */
+
+.row2_wrap>div:nth-child(2)>div:nth-child(2) {
+    animation: fadein 5s;  
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
+} /*menu_set > ps_menu */
+
+.row2_wrap>div:nth-child(2)>div:nth-child(2) img {
+    left: 55vw;
+    top: 15vh;
+    width: 18vw;
+    height: 55vh;
+} /*menu_set > ps_menu*/
+
+.row2_wrap>div:nth-child(2)>div:nth-child(3) {
+    animation: fadein 11s;  
+    -moz-animation: fadein 11s; /* Firefox */
+    -webkit-animation: fadein 11s; /* Safari and Chrome */
+    -o-animation: fadein 11s; /* Opera */
+} /*menu_set > mf_menu */
+
+.row2_wrap>div:nth-child(2)>div:nth-child(3) img {
+    top: 35vh;
+    left: 70vw;
+    width: 25vw;
+    height: 47vh;
+} /*menu_set > mf_menu*/
+
+
+.row2_wrap>div:nth-child(3) {
+    display: block;
+    position: absolute;
+    left: 7vw;
+    top: 25vh;
+    width: 10vw;
+    height: 6vh;
+    border: 2px solid rgb(28, 56, 49);
+    border-radius: 5px;
+    font-size: 0.7rem;
+    text-align: center;
+    line-height: 6vh;
+    transition: .8s;
+    animation: fadein 13s;  
+    -moz-animation: fadein 13s; /* Firefox */
+    -webkit-animation: fadein 13s; /* Safari and Chrome */
+    -o-animation: fadein 13s; /* Opera */
+} /* btn_menu */
+
+.row2_wrap div:nth-child(3)>a {
+    text-decoration: none;
+    color: rgb(28, 56, 49);
+} /* btn_menu > a */
+
+.row2_wrap div:nth-child(3):hover {
+    cursor: pointer;
+    background-color: rgb(28, 56, 49);
+} /* btn_menu : hover */
+
+.row2_wrap div:nth-child(3)>a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* banner */
+.row2_wrap>div:nth-child(4) div {
+    position: fixed;
+    z-index: 2;
+}
+
+.row2_wrap>div:nth-child(4) div img {
+    width: 11vw;
+    height: 16vh;
+}
+
+.whole_wrap .row2_wrap>div:nth-child(4) div:first-child {
+    top: -1vh;
+    left: 79.5vw;
+}
+
+.row2_wrap>div:nth-child(4) div:nth-child(2) {
+    top: 25vh;
+    left: 86.5vw;
+}
+
+
+/* header 영은님*/
+.wrap12{
+    position:relative;
+    width: 101vw;
+    height: 8vw;
+    background-color: rgb(246, 245, 230);
+    margin: -20px;
+}
+
+.icon{
+    position:absolute;
+    width: 100vw;
+    height: 5vw;
+    background-image: url("https://www.starbucks.co.kr/common/img/common/logo.png");
+    background-repeat: no-repeat;
+    margin: 2vw;
+    Background-position: 15vw 0vh;
+    background-size: 4.2vw;
+}
+
+#f2:hover{
+   cursor: pointer;
+}
+
+.font2{
+    position:absolute;
+    display:flex;
+    width: 35vw;
+    padding: 2vw;
+    font-size:12px;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 45vw;
+}
+
+.font{
+    position:absolute;
+    height: 50vw;
+    width: 55vw;
+    display:flex;
+    padding: 4vw;
+    padding-top:5vw;
+    font-size:11px;
+    justify-content: space-around;
+    margin-left: 28vw;
+    text-align: center;
+    line-height: 2vw;   
+}
+
+.wrap12 .font div{
+   text-align: center;
+   color:black;
+   width: 50vw;
+   height: 7vh;
+}
+
+.wrap12 .font div:hover{
+     background-color: rgb(46, 43, 43);
+     cursor: pointer;
+     text-decoration: underline;
+     color: rgb(76, 151, 76);
+}
+
+
+/* 다영님 */
+/* 페루 춘키 블론드 로스트 */
+/* 전체 백그라운드 박스 */
+.content2{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-color: #dbebf8;
+    background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2022/Summer1_ph2_bean_bg_02.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  /* first_image와 텍스트를 묶어주기 위한 이너박스 */
+.content2 > .bin_inner{
+    position: relative;
+    width: 85vw;
+    height: 100%; 
+    margin: 0 auto;
+    transition: 2s;
+}
+  /* 백그라운드 위 호랑이 이미지 */
+.content2 > .tiger{
+    position: absolute;
+    width: 30vw;
+    height: 40vh;
+    float: left;
+    margin-left: -1vw;
+    margin-top: 55vh;
+    overflow: hidden;
+} 
+
+  /* 페루 커피팩 옆 텍스트 설명글 */
+/* .content2 > .bin_inner .info_text > div {
+    display: block;
+} */
+
+  /* 백그라운드 위 새 이미지 */
+.content2 > .bird{
+    position: absolute;
+    width: 30vw;
+    height: 40vh;
+    float: left;
+    margin-left: 70vw;
+    margin-top: 57vh;
+    overflow: hidden;
+}
+  /* 자세히 보기 버튼 */
+.content2 > .bin_inner .peru__more-btn{
+    border: 2px solid rgb(36, 62, 32);
+    border-color: rgb(36, 62, 32);
+    color: rgb(53, 84, 48);
+    background-color: rgb(#FFCE12); 
+    border-radius: 5px;
+    padding: 10px;
+}
+
+  /* 자세히 보기 버튼 마진
+  .info_text div:nth-child(3) {
+    margin-top: 30px;
+  } */
+  /* 자세히 보기에서 호버 효과  */
+.content2 > .bin_inner .peru__more-btn:hover, .content2 > .bin_inner .peru__more-btn:focus{
+    text-decoration: underline;
+    color: white;
+    background-color: rgb(49, 73, 65);
+}
+/* 커피팩 이미지 박스 */
+.content2 > .bin_inner .bin_img_box{
+    position: absolute; 
+    width: 20vw;
+    height: 30vh;
+    margin-left: 25vw;
+    -webkit-transform-origin: -50vw; 
+    transform-origin: -30vw;
+    transition: 2s;
+    margin-top: 1vh;
+}
+
+  /* 커피팩 이동 효과 */
+.content2 > .bin_inner .first_image{
+    position: absolute;
+    display: block;
+    width: 25vw;
+    height: 50vh;
+    -webkit-transform: translateY(20vw);
+    -ms-transform: translateY(20vw);
+    transform: translateY(5vw);
+}
+/* 텍스트와 자세히 보기 버튼을 묶을 수 있는 박스 */
+.content2 > .bin_inner .info_text_box {
+    position: relative; 
+    width: 40vw;
+    height: 30vh;
+    margin-left: 45vw;
+    -webkit-transform-origin: -100vw; 
+    transform-origin: -100vw;
+    transition: 2s;
+    top: 35vh;
+}
+.content2 > .bin_inner .info_text_box .info_text_detail{
+    width: 50vw;
+    height: 20vh;
+    position: absolute;
+}
+.content2 > .bin_inner .info_text_box .info_text_detail img{
+    width: 35vw;
+    height: 15vh;
+    position: absolute;
+    margin-top: 10vh;
+    -webkit-transform: translateY(-20vw);
+    -ms-transform: translateY(-10vw);
+    transform: translateY(-10vw);
+    z-index: 1;
+    
+}
+/* 자세히 보기 빈 박스 */
+.content2 > .bin_inner .info_text_box .info_btn a{
+    text-decoration: none;
+    position: absolute;
+    width: 10vw;
+    height: 6vh;
+    transition: all 1s;
+    top: 13vh;
+    left: 10vw;
+    font-size: 1.3vw;
+    text-align: center;
+    justify-content: center;
+}
+  /* 자세히 보기 버튼 */
+.content2 > .bin_inner .info_text_box .info_btn a:hover{
+    text-decoration: underline;
+    display: block;
+    position: absolute;
+    color: rgb(219, 219, 219);
+    background-color: #BD803D;
+}
+
+/* content3 css */
+.content3{
+    width: 100%;
+    height: 70vh;
+    background-image: url("https://image.istarbucks.co.kr/img/event/2022/reserve_2022_indonesia_visual_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+/* 이미지를 감쌀 div */
+.content3 > .bin_inner2{
+    position: relative;
+    transition: .5s;
+    animation: fadein 13s;  
+    -moz-animation: fadein 13s; /* Firefox */
+    -webkit-animation: fadein 13s; /* Safari and Chrome */
+    -o-animation: fadein 13s; /* Opera */
+}
+   
+/* 백그라운드 이미지 위의 왼쪽 수풀 이미지 */
+.content3 > .bin_inner2 .left_back_img {
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    top: 20vh;
+    float: left;
+    margin-left: -8vw;
+}
+    /* 백그라운드 이미지 위 오른쪽 수풀 이미지 */
+.content3 > .bin_inner2 .right_back_img {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 25vh;
+    float: left;
+    margin-left: 70vw;
+    z-index: 1;
+}
+
+/* 가운데 INDONESIA 글씨 빈 박스 */
+.content3 > .bin_inner2 .center_title{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    margin-left: 10vw;
+    margin-top: 17vh;
+}
+/* 가운데 INDONESIA 글씨 이미지 */
+.content3 > .bin_inner2 .center_title img{
+    position: absolute;
+    width: 30vw;
+    height: 15vh;
+}
+.content3 > .bin_inner2 .bin_img_box2 img{
+    width: 100%;
+    height: 30vh;
+}
+
+
+/* 자세히 보기 빈 박스 */
+.content3 > .bin_inner2 .detail_btn a{
+    position: absolute;
+    text-decoration: none;
+    font-size: 15px;
+    color: #BD803D;
+    width: 10vw;
+    height: 5vh;
+    margin-left: 28vw;
+    margin-top: 20vh;
+    border: 2px solid #BD803D;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    padding: 0.8%;
+    transition: 1s;
+}
+/* 자세히 보기 버튼 호버 */
+.content3 > .bin_inner2 .detail_btn a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+    background-color: #BD803D;
+}
+
+
+/* 커피잔 이미지 빈 박스*/
+.content3 > .bin_inner2 .bin_img_box2{
+    position: absolute;
+    width: 50vw;
+    height: 40vh;
+    top: 20vh;
+    margin-left: 30vw;
+}
+.content3 > .bin_inner2 .bin_img_box2 img{
+    position: absolute;
+    width: 60vw;
+    height: 30vh;
+}
+
+
+/* 영은님 footer */
+.footer_background{
+    position:relative;
+    background-color: rgb(49, 49, 49);
+    width: 101vw;
+    height: 80vh;
+    margin: -2vw;
+}
+
+ul{list-style: none;}
+
+li{color:white;
+   font-size: 0.8vw;
+   line-height: 1.5vw;
+   cursor: pointer;}
+
+.company{
+    position:absolute;
+    height: 5vh;
+    margin: 5vw 20vh;
+}
+
+.CORPORATESALES{
+    position:absolute;
+    height: 5vh;
+    margin: 5vw 45vh;
+}
+
+.PARTNERSHIP{
+    position:absolute;
+    height: 5vh;
+    margin: 5vw 73vh;
+}
+
+
+.ONLINECOMMUNITY{
+    position:absolute;
+    width: 15vw;
+    height: 5vh;
+    margin: 5vw 101vh;
+}
+
+
+.RECRUIT{
+    position:absolute;
+    width: 15vw;
+    height: 5vh;
+    margin: 5vw 128vh;
+}
+
+.black{
+    position: relative;
+    background-color: rgb(41, 39, 39);
+    width: 101vw;
+    height: 6vw;
+    top: 20vw;
+    align-items: center;
+    line-height: 7.5vw;
+    margin-left: 0 auto;
+}
+
+.black > div{
+        float: left;
+        position: absolute;
+        padding-left: 13vw;
+        size: 25vw;
+
+}
+
+
+
+.footer_background > .company_1 li{
+    position: relative;
+    display: inline-block;
+    margin-left: 1vw;
+    font-size: 0.7vw;
+    padding-top: 21vw;
+    text-align: center;
+    cursor: pointer;
+    left: 16vw; 
+}
+
+
+.company_1 li:nth-child(1){
+    color: green;
+    
+}
+
+.border > div{
+    position: relative;
+    border: 2px solid;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    width: 6vw;
+    height: 2vw;
+    line-height: 3vw;
+    cursor: pointer;
+    left: 35vw;
+}
